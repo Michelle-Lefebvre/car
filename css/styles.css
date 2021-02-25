@@ -6,13 +6,47 @@ body {
     box-sizing: border-box;
   }
   
-  .car {
+  section .one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    background-image: linear-gradient(45deg, violet, pink, magenta);
+      height: 100vh;
+      width: 100vw;
+      clip-path: polygon(0 0, 100% 0, 100% 88%, 1% 100%);
+     position:absolute;
+    z-index: -1;
+  }
+
+  section .two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* background-image: linear-gradient(45deg, violet, pink, magenta); */
+      height: 100vh;
+      width: 100vw;
+      clip-path: polygon(0 0, 100% 0, 100% 88%, 1% 100%);
+     position:absolute;
+    z-index: -1;
+  }
+
+
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .car {
     position: absolute;
     top: 10%;
     left: 33%;
     width: 700px;
     animation: shrink 40s linear infinite;
-  }
+  } */
+
   .tires {
     display: flex;
     justify-content: center;
