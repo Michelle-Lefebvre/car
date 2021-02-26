@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: grey;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  
+  .car-tires {
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    width: 700px;
+  }
+  .tires {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 50%;
+    transform-style: preserve-3d;
+    animation: move 25s linear infinite;
+  }
+  
+  span {
+    tranform-style: preserve-3d;
+    transform-origin: center;
+  }
+  
+  .tires span:nth-child(1) {
+    transform: rotateY(73deg) translateZ(300px);
+  }
+  .tires span:nth-child(2) {
+    transform: rotateY(146deg) translateZ(300px);
+  }
+  .tires span:nth-child(3) {
+    transform: rotateY(219deg) translateZ(300px);
+  }
+  .tires span:nth-child(4) {
+    transform: rotateY(292deg) translateZ(300px);
+  }
+  .tires span:nth-child(5) {
+    transform: rotateY(365deg) translateZ(300px);
+  }
+  
+  .tire19 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 120px;
+    height: 120px;
+    transform-style: preserve-3d;
+  }
+  
+  .tire20 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform-style: preserve-3d;
+  }
+  
+  .tire21 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 120px;
+    height: 120px;
+    transform-style: preserve-3d;
+  }
+  
+  .tire21-2 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 120px;
+    height: 120px;
+    transform-style: preserve-3d;
+  }
+  
+  .tire21-3 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 120px;
+    height: 120px;
+    transform-style: preserve-3d;
+  }
+  
+  .tire19:hover, .tire20:hover, .tire21:hover, .tire21-2:hover, .tire21-3:hover{ 
+    animation: turn 1s linear infinite;
+  }
+  
+  @keyframes turn {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(-360deg);
+    }
+  }
+  
+  .tire span {
+    width: 100%;
+    height: 100%;
+    object-fit: 100%;
+  }

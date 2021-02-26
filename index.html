@@ -1,81 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAR</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript">
- 
-        var width=100;
-        var difference=2;
-        var interveralID =0;
-        //document.getElementById("img1").style.width=width;
-        
-        function increase()
-        {
-        clearInterval(interveralID);
-        interveralID=setInterval(expand,10);
-        }
-        function decrease()
-        {
-        clearInterval(interveralID);
-        interveralID=setInterval(shrink,10);
-        }
-        function expand()
-        {
-        if(width<200)
-        {
-        width = width+difference;
-        document.getElementById("img1").style.width=width;
-        console.log(width);
-        }
-        else
-        {
-        clearInterval(interveralID);
-        }
-        
-        }
-        function shrink()
-        {
-        if(width>100)
-        {
-        width = width-difference;
-        document.getElementById("img1").style.width=width;
-        console.log(width);
-        }
-        else
-        {
-        clearInterval(interveralID);
-        }
-        
-        }
-        
-        </script>
-</head>
-<body>
-    <section id="home">
-        <img id="hero" src="images/audi-transparent-bg.png" alt="Audi 4 door">
-    </section>
-    <section id="tires">
-        <!-- <img src="images/audi-transparent-bg.png" alt="Audi 4 door" class="car"> -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <style>
+    section > #home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 0;
+      background-color: black;
+      height: 50%;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 55%, 0 50%);
+      position: absolute;
+      z-index: -1;
+    }
 
-        <div class="tires">
-        <span><img src="images/tires/wheel19.png" alt="19 inch tire" class="tire19" title="19&rdquo;"></span>
-        
-        <span><img src="images/tires/wheel20.png" alt="20 inch tire" class="tire20" title="20&rdquo;"></span>
-        
-        <span><img src="images/tires/wheels21.png" alt="21 inch tire 1" class="tire21" title="21&rdquo;"></span>
-          
-        <span><img src="images/tires/wheels21-2.png" alt="21 inch tire 2" class="tire21-2" title="21&rdquo;"></span>
-          
-        <span><img src="images/tires/wheels21-3.png" alt="21 inch tire 3" class="tire21-3" title="21&rdquo;"></span>
-          
-        </div>
-        <h3>Select a tire</h3>        
-    </section>
+    #colors {
+      margin: 0;
+      padding: 0;
+      background: grey;
+      height: 500vh;
+      width: 100vw;
+      clip-path: polygon(0 50%, 100% 55%, 100% 95%, 0% 100%);
+      position: absolute;
+      z-index: -1;
+    }
+    /* section tires */
+    #tires {
+      margin: 0;
+      padding: 0;
+      background: lightgrey;
+      background-size: cover;
+      box-sizing: border-box;
+      height: 300vh;
+      width: 100vw;
+      clip-path: polygon(0 50%, 100% 55%, 100% 95%, 0% 100%);
+      position: absolute;
+      z-index: -1;
+    }
+
     
+  </style>
+  <body>
+    <section id="home">
+      <img id="car" src="images/audi-transparent-bg.png" alt="Audi 4 door" width="100%"/>
+    </section>
 
-</body>
+    <!-- <section id="colors"></section> -->
+
+    <!-- <section id="tires">
+      <img
+        src="images/audi-transparent-bg.png"
+        alt="Audi 4 door"
+        class="car-tires"
+      />
+
+      <div class="tires">
+        <span
+          ><img
+            src="images/tires/wheel19.png"
+            alt="19 inch tire"
+            class="tire19"
+            title="19&rdquo;"
+        /></span>
+
+        <span
+          ><img
+            src="images/tires/wheel20.png"
+            alt="20 inch tire"
+            class="tire20"
+            title="20&rdquo;"
+        /></span>
+
+        <span
+          ><img
+            src="images/tires/wheels21.png"
+            alt="21 inch tire 1"
+            class="tire21"
+            title="21&rdquo;"
+        /></span>
+
+        <span
+          ><img
+            src="images/tires/wheels21-2.png"
+            alt="21 inch tire 2"
+            class="tire21-2"
+            title="21&rdquo;"
+        /></span>
+
+        <span
+          ><img
+            src="images/tires/wheels21-3.png"
+            alt="21 inch tire 3"
+            class="tire21-3"
+            title="21&rdquo;"
+        /></span>
+      </div>
+      <h3>Select a tire</h3>
+    </section> -->
+  </body>
 </html>

@@ -1,0 +1,24 @@
+/* color list */
+#selectcolor{
+	margin-top: 3vh;
+}
+.row {
+	display: flex;
+	flex-flow: column no-wrap;
+	width: 50%;
+	margin: auto;
+	bottom: 8vh;
+  }
+  .column {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 25%;
+	height: 25%;
+	margin: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+	.row { flex-wrap: wrap; }
+	.column { width: 100%; }
+  }
+  
